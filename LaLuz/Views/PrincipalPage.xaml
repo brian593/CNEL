@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaLuz.Views.PrincipalPage"
+             Title="PrincipalPage">
+      <StackLayout Padding="20">
+        <!-- Campo numérico -->
+        <Entry
+            Text="{Binding IdInput}"
+            Placeholder="Dato"
+            Keyboard="Numeric" />
+
+        <!-- Picker para los criterios -->
+        <Picker
+            Title="Tipo"
+            ItemsSource="{Binding DisplayTypes}"
+            SelectedItem="{Binding SelectedType}" />
+
+        <!-- Botón para enviar -->
+        <Button
+            Text="Consultar"
+            Command="{Binding SubmitAsyncCommand}" />
+
+
+        <StackLayout Orientation="Horizontal">
+        <CheckBox x:Name="myCheckBox"
+              IsChecked="{Binding IsSave,Mode=TwoWay}">
+        </CheckBox>
+        <Label VerticalTextAlignment="Center"  Text="Guardar la ultima consulta">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Clicked"/>
+            </Label.GestureRecognizers>
+        </Label>
+        </StackLayout>
+
+
+        <Label IsVisible="{Binding IsVisible}" Text="Cuenta Contrato: " FontAttributes="Bold" />
+                            <Label IsVisible="{Binding IsVisible}" Text="{Binding CuentaContrato}" />
+
+                            <Label IsVisible="{Binding IsVisible}" Text="Dirección: " FontAttributes="Bold" />
+                            <Label IsVisible="{Binding IsVisible}" Text="{Binding Direccion}" />
+
+                            <Label IsVisible="{Binding IsVisible}" Text="Fecha Registro: " FontAttributes="Bold" />
+                            <Label IsVisible="{Binding IsVisible}" Text="{Binding FechaRegistro}" />
+
+<ListView ItemsSource="{Binding DetallesPlanificaciones}"
+          HasUnevenRows="True"
+          SeparatorVisibility="None"
+          Margin="10">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+              
+                    <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                          ColumnDefinitions="Auto,*">
+                        <!-- Fecha de corte -->
+                        <Label Grid.Row="0" Grid.Column="0" Text="Fecha corte:" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding fechaCorte}" TextColor="DarkBlue"/>
+
+                        <!-- Hora desde -->
+                        <Label Grid.Row="1" Grid.Column="0" Text="Hora desde:" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding horaDesde}" TextColor="DarkBlue"/>
+
+                        <!-- Hora hasta -->
+                        <Label Grid.Row="2" Grid.Column="0" Text="Hora hasta:" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="2" Grid.Column="1" Text="{Binding horaHasta}" TextColor="DarkBlue"/>
+
+                        <!-- Comentario -->
+                        <Label Grid.Row="3" Grid.Column="0" Text="Comentario:" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Grid.Row="3" Grid.Column="1" Text="{Binding comentario}" TextColor="DarkBlue"/>
+                    </Grid>
+            </ViewCell>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{D6CEAB13-FFDF-453A-A301-9DA34D34A711}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/ViewModels/MainPageViewModel.cs" relfile="LaLuz/ViewModels/MainPageViewModel.cs" line="113" column="1" />
+      <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/ViewModels/MainPageViewModel.cs" relfile="LaLuz/ViewModels/MainPageViewModel.cs" line="75" column="1" />
+      <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/ViewModels/MainPageViewModel.cs" relfile="LaLuz/ViewModels/MainPageViewModel.cs" line="76" column="1" />
+      <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/ViewModels/MainPageViewModel.cs" relfile="LaLuz/ViewModels/MainPageViewModel.cs" line="79" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_34" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LaLuz PreferredExecutionTarget="Android.pixel_5_-_api_34" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaLuz/ViewModels/MainPageViewModel.cs">
+    <Files>
+      <File FileName="LaLuz/ViewModels/MainPageViewModel.cs" Line="76" Column="1" />
+      <File FileName="LaLuz/Services/ApiServices.cs" Line="29" Column="90" />
+      <File FileName="LaLuz/Models/ApiResponse.cs" Line="13" Column="31" />
+      <File FileName="LaLuz/Models/Notificacion.cs" Line="5" Column="26" />
+      <File FileName="LaLuz/Models/DetallePlanificacion.cs" Line="7" Column="1" />
+      <File FileName="LaLuz/ViewModels/BaseViewModel.cs" Line="23" Column="27" />
+      <File FileName="LaLuz/Views/PrincipalPage.xaml" Line="29" Column="80" />
+      <File FileName="LaLuz/Services/IApiServices.cs" Line="9" Column="1" />
+      <File FileName="LaLuz/Views/PrincipalPage.xaml.cs" Line="15" Column="53" />
+      <File FileName="LaLuz/MauiProgram.cs" Line="23" Column="1" />
+      <File FileName="LaLuz/Services/DatabaseService.cs" Line="55" Column="26" />
+      <File FileName="LaLuz/Services/IDatabaseService.cs" Line="10" Column="51" />
+      <File FileName="LaLuz/App.xaml.cs" Line="13" Column="23" />
+      <File FileName="LaLuz/Models/DataWhitJson.cs" Line="10" Column="1" />
+      <File FileName="LaLuz/Models/Type.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CNEL" expanded="True">
+            <Node name="LaLuz" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="MainPageViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="PrincipalPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
