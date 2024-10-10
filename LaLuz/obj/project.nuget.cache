@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1ZRwNoGIpScQYi1bfLHRWsmuABtU2b5r3uhSais30oKPZXkDOQlUQySYJfE1KbNZUvZIrHEc9VW/m0ROPKmrIQ==",
+  "dgSpecHash": "E05KNYHQPOY=",
   "success": true,
   "projectFilePath": "/Users/brianmolinabastidas/CNEL/LaLuz/LaLuz.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/brianmolinabastidas/.nuget/packages/communitytoolkit.maui.core/9.1.0/communitytoolkit.maui.core.9.1.0.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/communitytoolkit.mvvm/8.3.2/communitytoolkit.mvvm.8.3.2.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
+    "/Users/brianmolinabastidas/.nuget/packages/inputkit.maui/4.4.7/inputkit.maui.4.4.7.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/microsoft.data.sqlite.core/8.0.10/microsoft.data.sqlite.core.8.0.10.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/microsoft.entityframeworkcore/8.0.10/microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.10/microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",
@@ -49,6 +50,7 @@
     "/Users/brianmolinabastidas/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/system.runtime.interopservices.nfloat.internal/6.0.1/system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "/Users/brianmolinabastidas/.nuget/packages/uraniumui.icons.materialicons/2.10.2/uraniumui.icons.materialicons.2.10.2.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/xamarin.android.glide/4.15.1.2/xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/xamarin.android.glide.annotations/4.15.1.2/xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "/Users/brianmolinabastidas/.nuget/packages/xamarin.android.glide.disklrucache/4.15.1.2/xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",

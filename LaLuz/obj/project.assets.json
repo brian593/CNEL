@@ -65,6 +65,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -760,6 +780,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -2590,6 +2623,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -3285,6 +3338,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -5115,6 +5181,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -5810,6 +5896,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -7640,6 +7739,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -8335,6 +8454,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -10165,6 +10297,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -10860,6 +11012,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -12690,6 +12855,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -13385,6 +13570,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -15215,6 +15413,26 @@
           }
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-android34.0/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -15910,6 +16128,19 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -17727,6 +17958,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -18392,6 +18643,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -18447,6 +18711,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -19112,6 +19396,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -19167,6 +19464,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -19832,6 +20149,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -19887,6 +20217,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -20552,6 +20902,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -20607,6 +20970,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -21272,6 +21655,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -21327,6 +21723,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -21992,6 +22408,19 @@
         "compile": {
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
           }
         }
       }
@@ -22047,6 +22476,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-ios17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -22714,6 +23163,19 @@
             "related": ".xml"
           }
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5": {
@@ -22765,6 +23227,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -23504,6 +23986,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/android-arm": {
@@ -23555,6 +24050,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -24215,6 +24730,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/android-arm64": {
@@ -24266,6 +24794,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -24926,6 +25474,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/android-x64": {
@@ -24977,6 +25538,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -25637,6 +26218,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/android-x86": {
@@ -25688,6 +26282,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -26348,6 +26962,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/iossimulator-arm64": {
@@ -26399,6 +27026,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -27056,6 +27703,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net8.0-maccatalyst17.5/maccatalyst-arm64": {
@@ -27107,6 +27767,26 @@
         },
         "build": {
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "InputKit.Maui/4.4.7": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0-maccatalyst17.5/icon512.png": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -27767,6 +28447,19 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "UraniumUI.Icons.MaterialIcons/2.10.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     }
   },
@@ -27881,6 +28574,40 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
+      ]
+    },
+    "InputKit.Maui/4.4.7": {
+      "sha512": "nrHIYEVnjJoRKBDEO9Wji8i2bNK3VaZOkWRy8srLXgvASX74SutOC7RuN95MUJqp4uTCCw1E9pNw26gMSKXqZA==",
+      "type": "package",
+      "path": "inputkit.maui/4.4.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "content/icon512.png",
+        "contentFiles/any/net8.0-android34.0/icon512.png",
+        "contentFiles/any/net8.0-ios17.5/icon512.png",
+        "contentFiles/any/net8.0-maccatalyst17.5/icon512.png",
+        "contentFiles/any/net8.0-windows10.0.19041/icon512.png",
+        "contentFiles/any/net8.0/icon512.png",
+        "icon512.png",
+        "inputkit.maui.4.4.7.nupkg.sha512",
+        "inputkit.maui.nuspec",
+        "lib/net8.0-android34.0/InputKit.Maui.dll",
+        "lib/net8.0-android34.0/InputKit.Maui.pdb",
+        "lib/net8.0-android34.0/InputKit.Maui.xml",
+        "lib/net8.0-ios17.5/InputKit.Maui.dll",
+        "lib/net8.0-ios17.5/InputKit.Maui.pdb",
+        "lib/net8.0-ios17.5/InputKit.Maui.xml",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.dll",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.pdb",
+        "lib/net8.0-maccatalyst17.5/InputKit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.pdb",
+        "lib/net8.0-windows10.0.19041/InputKit.Maui.xml",
+        "lib/net8.0/InputKit.Maui.dll",
+        "lib/net8.0/InputKit.Maui.pdb",
+        "lib/net8.0/InputKit.Maui.xml"
       ]
     },
     "Microsoft.Data.Sqlite.Core/8.0.10": {
@@ -29574,6 +30301,30 @@
         "system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
         "system.runtime.interopservices.nfloat.internal.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "UraniumUI.Icons.MaterialIcons/2.10.2": {
+      "sha512": "lIWI7Fk5sKpb0LcYK2sabnkqTUUMYL+J4ILEKQE+ZID7OMaGL/whovRuAieee9R0aFMtKEBbswkkCrwHDZsXJQ==",
+      "type": "package",
+      "path": "uraniumui.icons.materialicons/2.10.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.dll",
+        "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.pdb",
+        "lib/net8.0-android34.0/UraniumUI.Icons.MaterialIcons.xml",
+        "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.dll",
+        "lib/net8.0-ios17.5/UraniumUI.Icons.MaterialIcons.pdb",
+        "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.dll",
+        "lib/net8.0-maccatalyst17.5/UraniumUI.Icons.MaterialIcons.pdb",
+        "lib/net8.0-windows10.0.19041/UraniumUI.Icons.MaterialIcons.dll",
+        "lib/net8.0-windows10.0.19041/UraniumUI.Icons.MaterialIcons.pdb",
+        "lib/net8.0/UraniumUI.Icons.MaterialIcons.dll",
+        "lib/net8.0/UraniumUI.Icons.MaterialIcons.pdb",
+        "logo_128.png",
+        "uraniumui.icons.materialicons.2.10.2.nupkg.sha512",
+        "uraniumui.icons.materialicons.nuspec"
       ]
     },
     "Xamarin.Android.Glide/4.15.1.2": {
@@ -31618,32 +32369,38 @@
     "net8.0-android34.0": [
       "CommunityToolkit.Maui >= 9.1.0",
       "CommunityToolkit.Mvvm >= 8.3.2",
+      "InputKit.Maui >= 4.4.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.8",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "UraniumUI.Icons.MaterialIcons >= 2.10.2"
     ],
     "net8.0-ios17.5": [
       "CommunityToolkit.Maui >= 9.1.0",
       "CommunityToolkit.Mvvm >= 8.3.2",
+      "InputKit.Maui >= 4.4.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.8",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "UraniumUI.Icons.MaterialIcons >= 2.10.2"
     ],
     "net8.0-maccatalyst17.5": [
       "CommunityToolkit.Maui >= 9.1.0",
       "CommunityToolkit.Mvvm >= 8.3.2",
+      "InputKit.Maui >= 4.4.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
       "Microsoft.Maui.Controls >= 8.0.82",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.82",
       "Microsoft.NET.ILLink.Tasks >= 8.0.8",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "UraniumUI.Icons.MaterialIcons >= 2.10.2"
     ]
   },
   "packageFolders": {
@@ -31690,6 +32447,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -31703,6 +32465,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.3.2, )"
+          },
+          "InputKit.Maui": {
+            "target": "Package",
+            "version": "[4.4.7, )"
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
@@ -31729,6 +32495,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "UraniumUI.Icons.MaterialIcons": {
+            "target": "Package",
+            "version": "[2.10.2, )"
           }
         },
         "imports": [
@@ -31763,6 +32533,10 @@
             "target": "Package",
             "version": "[8.3.2, )"
           },
+          "InputKit.Maui": {
+            "target": "Package",
+            "version": "[4.4.7, )"
+          },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.0.10, )"
@@ -31788,6 +32562,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "UraniumUI.Icons.MaterialIcons": {
+            "target": "Package",
+            "version": "[2.10.2, )"
           }
         },
         "imports": [
@@ -31822,6 +32600,10 @@
             "target": "Package",
             "version": "[8.3.2, )"
           },
+          "InputKit.Maui": {
+            "target": "Package",
+            "version": "[4.4.7, )"
+          },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
             "version": "[8.0.10, )"
@@ -31847,6 +32629,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "UraniumUI.Icons.MaterialIcons": {
+            "target": "Package",
+            "version": "[2.10.2, )"
           }
         },
         "imports": [

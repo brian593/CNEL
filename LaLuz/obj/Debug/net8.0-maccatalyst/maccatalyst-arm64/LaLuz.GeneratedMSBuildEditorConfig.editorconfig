@@ -23,11 +23,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = LaLuz.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/brianmolinabastidas/CNEL/LaLuz/AppShell.xaml]
+[/Users/brianmolinabastidas/CNEL/LaLuz/Controls/MyEntry.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LaLuz.AppShell.xaml
-build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
-build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LaLuz.Controls.MyEntry.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls/MyEntry.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls/MyEntry.xaml
 
 [/Users/brianmolinabastidas/CNEL/LaLuz/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

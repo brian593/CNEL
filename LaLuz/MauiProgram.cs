@@ -1,9 +1,11 @@
 ﻿using CommunityToolkit.Maui;
+using InputKit.Handlers;
 using LaLuz.DataAccess;
 using LaLuz.Services;
 using LaLuz.ViewModels;
 using LaLuz.Views;
 using Microsoft.Extensions.Logging;
+using UraniumUI;
 
 namespace LaLuz;
 
@@ -14,12 +16,18 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.UseMauiCommunityToolkit()
+            .ConfigureMauiHandlers(handlers =>
+            {
+                handlers.AddInputKitHandlers(); 
+            })
+            .UseMauiCommunityToolkit()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+                fonts.AddMaterialIconFonts();
+
+            });
 		
 #if DEBUG
 		builder.Logging.AddDebug();

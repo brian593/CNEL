@@ -45,6 +45,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,6 +63,10 @@
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.3.2, )"
+            },
+            "InputKit.Maui": {
+              "target": "Package",
+              "version": "[4.4.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -84,6 +93,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UraniumUI.Icons.MaterialIcons": {
+              "target": "Package",
+              "version": "[2.10.2, )"
             }
           },
           "imports": [
@@ -118,6 +131,10 @@
               "target": "Package",
               "version": "[8.3.2, )"
             },
+            "InputKit.Maui": {
+              "target": "Package",
+              "version": "[4.4.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -143,6 +160,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UraniumUI.Icons.MaterialIcons": {
+              "target": "Package",
+              "version": "[2.10.2, )"
             }
           },
           "imports": [
@@ -177,6 +198,10 @@
               "target": "Package",
               "version": "[8.3.2, )"
             },
+            "InputKit.Maui": {
+              "target": "Package",
+              "version": "[4.4.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -202,6 +227,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "UraniumUI.Icons.MaterialIcons": {
+              "target": "Package",
+              "version": "[2.10.2, )"
             }
           },
           "imports": [

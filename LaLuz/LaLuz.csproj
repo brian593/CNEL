@@ -43,10 +43,10 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#000000" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#000000" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -67,14 +67,28 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
+		<PackageReference Include="InputKit.Maui" Version="4.4.7" />
+		<PackageReference Include="UraniumUI.Icons.MaterialIcons" Version="2.10.2" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Remove="Utils\" />
 	  <None Remove="DataAccess\" />
+	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Utils\" />
 	  <Folder Include="DataAccess\" />
+	  <Folder Include="Controls\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png" Condition="Exists('$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png')">
+	    <NuGetPackageId>InputKit.Maui</NuGetPackageId>
+	    <NuGetPackageVersion>4.4.7</NuGetPackageVersion>
+	    <NuGetItemType>None</NuGetItemType>
+	    <Pack>false</Pack>
+	    <Private>False</Private>
+	    <Link>icon512.png</Link>
+	  </BundleResource>
 	</ItemGroup>
 </Project>
