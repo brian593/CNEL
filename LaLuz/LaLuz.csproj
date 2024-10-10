@@ -69,6 +69,7 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
 		<PackageReference Include="InputKit.Maui" Version="4.4.7" />
 		<PackageReference Include="UraniumUI.Icons.MaterialIcons" Version="2.10.2" />
+		<PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.91" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -82,6 +83,14 @@
 	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <BundleResource Include="$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png" Condition="Exists('$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png')">
+	    <NuGetPackageId>InputKit.Maui</NuGetPackageId>
+	    <NuGetPackageVersion>4.4.7</NuGetPackageVersion>
+	    <NuGetItemType>None</NuGetItemType>
+	    <Pack>false</Pack>
+	    <Private>False</Private>
+	    <Link>icon512.png</Link>
+	  </BundleResource>
 	  <BundleResource Include="$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png" Condition="Exists('$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png')">
 	    <NuGetPackageId>InputKit.Maui</NuGetPackageId>
 	    <NuGetPackageVersion>4.4.7</NuGetPackageVersion>

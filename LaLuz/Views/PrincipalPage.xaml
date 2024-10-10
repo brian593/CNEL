@@ -4,24 +4,22 @@
              x:Class="LaLuz.Views.PrincipalPage"
              xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
              xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
-
-
              BackgroundColor="Black">
-
     <StackLayout Padding="20">
         <!-- Campo numérico -->
 
 
-          <input:AdvancedEntry
+        <input:AdvancedEntry
                         Title="Por favor ingrese el parametro para buscar:"
-                        IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Phone}, Color={StaticResource Primary}}"
+                        IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Search}, Color={StaticResource Primary}}"
                         Keyboard="Numeric"
                         PlaceholderColor="LightGray"
                         Placeholder="5439998877"
                         Text="{Binding IdInput}"
+                       
                         TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}">
-                   
-                </input:AdvancedEntry>
+
+        </input:AdvancedEntry>
 
         <!-- Picker para los criterios -->
         <Frame BackgroundColor="Transparent"
@@ -31,7 +29,7 @@
        Margin="10"
        HasShadow="False">
             <Picker
-            Title="Tipo"
+            Title="Criterio de busqueda"
             TextColor="White"
             BackgroundColor="Transparent"
             TitleColor="#a8d8ff"
@@ -50,7 +48,8 @@
             Command="{Binding SubmitAsyncCommand}" />
 
         <!-- CheckBox y etiqueta -->
-        <StackLayout Orientation="Horizontal">
+        <input:CheckBox Text="Guardar la última consulta" Type="Material" IsChecked="{Binding IsSave}" TextColor="AliceBlue" Color="#5cb2ff" />
+        <!--<StackLayout Orientation="Horizontal">
             <CheckBox x:Name="myCheckBox"
                   IsChecked="{Binding IsSave,Mode=TwoWay}"
                   Color="#5cb2ff" />
@@ -59,7 +58,7 @@
                     <TapGestureRecognizer Tapped="Clicked"/>
                 </Label.GestureRecognizers>
             </Label>
-        </StackLayout>
+        </StackLayout>-->
 
         <!-- Resultado de la consulta -->
         <Label IsVisible="{Binding IsVisible}" Text="Cuenta Contrato: " FontAttributes="Bold" TextColor="White" />
@@ -87,21 +86,41 @@
                             <BoxView Color="#1f1f1f" CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
 
                             <!-- Contenido de la tarjeta -->
-                            <Grid Padding="10" Margin="1" RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
+                            <Grid Padding="10" Margin="1" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,Auto">
 
-                                <!-- Ajustando los colores para el fondo oscuro -->
-                                <Label Grid.Row="0" Grid.Column="0" Text="Fecha corte:" FontAttributes="Bold" TextColor="White"/>
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding fechaCorte}" TextColor="#a8d8ff"/>
+                                <!-- Fecha -->
+                                <Grid Grid.Row="0" Grid.Column="0">
+                                    <Label Text="{Binding fechaCorte}" TextColor="#a8d8ff"/>
+                                </Grid>
 
-                                <Label Grid.Row="1" Grid.Column="0" Text="Hora desde:" FontAttributes="Bold" TextColor="White"/>
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding horaDesde}" TextColor="#a8d8ff"/>
+                                <!-- Comentario -->
+                                <Grid Grid.Row="1" Grid.Column="0">
+                                    <Label Text="{Binding comentario}" TextColor="#a8d8ff"/>
+                                </Grid>
 
-                                <Label Grid.Row="2" Grid.Column="0" Text="Hora hasta:" FontAttributes="Bold" TextColor="White"/>
-                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding horaHasta}" TextColor="#a8d8ff"/>
+                                <!-- Desde/Hasta -->
+                                <Grid Grid.Row="2" Grid.Column="0" RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
 
-                                <Label Grid.Row="3" Grid.Column="0" Text="Comentario:" FontAttributes="Bold" TextColor="White"/>
-                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding comentario}" TextColor="#a8d8ff"/>
+                                    <!-- Desde -->
+                                    <Label Grid.Row="0" Grid.Column="0" Text="Desde:" FontAttributes="Bold" TextColor="White"/>
+                                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding horaDesde}" TextColor="#a8d8ff"/>
 
+                                    <!-- Hasta -->
+                                    <Label Grid.Row="0" Grid.Column="1" Text="Hasta:" FontAttributes="Bold" TextColor="White"/>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding horaHasta}" TextColor="#a8d8ff"/>
+
+                                </Grid>
+
+                                <Grid Grid.Column="1" Grid.Row="0" Grid.RowSpan="3">
+                                    <ImageButton
+                                        Clicked="ImageButton_Clicked"
+                                        >
+                                        <ImageButton.Source>
+                                            <FontImageSource FontFamily="MaterialRegular" Glyph="{x:Static m:MaterialRegular.Share}" Color="Orange" />
+                                        </ImageButton.Source>
+                                    </ImageButton>
+
+                                </Grid>
                             </Grid>
                         </Grid>
                     </ViewCell>

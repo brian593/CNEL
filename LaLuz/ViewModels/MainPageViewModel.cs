@@ -1,7 +1,6 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LaLuz.DataAccess;
@@ -12,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace LaLuz.ViewModels;
 
-public partial class MainPageViewModel:BaseViewModel
+public partial class MainPageViewModel : BaseViewModel
 {
     #region Variables
     private readonly IApiServices _apiServices;
@@ -29,10 +28,10 @@ public partial class MainPageViewModel:BaseViewModel
         { "IDENTIFICACION", "Cédula de identidad" }
     };
 
-        public ObservableCollection<string> DisplayTypes { get; }
+    public ObservableCollection<string> DisplayTypes { get; }
     #endregion
 
-  #region Propiedades
+    #region Propiedades
     [ObservableProperty]
     private ApiResponse cnelData;
 
@@ -46,28 +45,30 @@ public partial class MainPageViewModel:BaseViewModel
     private string selectedType;
 
     [ObservableProperty]
-     private ObservableCollection<DetallePlanificacion> detallesPlanificaciones;
+    private ObservableCollection<DetallePlanificacion> detallesPlanificaciones;
 
-[ObservableProperty]
+    [ObservableProperty]
     private string cuentaContrato;
     [ObservableProperty]
     private string direccion;
     [ObservableProperty]
     private string fechaRegistro;
-    public ICommand SubmitAsyncCommand { get; }
+    public System.Windows.Input.ICommand SubmitAsyncCommand { get; }
+    public System.Windows.Input.ICommand ShareItemCommand { get; }
 
     #endregion
 
     #region CONSTRUCTOR
     public MainPageViewModel(IApiServices apiServices, DWJDBContext context)
     {
-        _apiServices=apiServices;
+        _apiServices = apiServices;
         _dbContext = context;
 
         DisplayTypes = new ObservableCollection<string>(Types.Values);
         selectedType = Types["CUENTA_CONTRATO"]; // Valor por defecto
- 
-     SubmitAsyncCommand = new AsyncRelayCommand(SubmitAsync);
+
+        SubmitAsyncCommand = new AsyncRelayCommand(SubmitAsync);
+        ShareItemCommand = new AsyncRelayCommand(ShareItem);
 
         MainThread.BeginInvokeOnMainThread(new Action(async () => await Obtener()));
 
@@ -91,8 +92,7 @@ public partial class MainPageViewModel:BaseViewModel
 
 
 
-    [RelayCommand]
-    public async Task SubmitAsync()    
+    public async Task SubmitAsync()
     {
         // Obtener el valor de la API basado en el displayName seleccionado
         var apiValue = GetSelectedApiValue();
@@ -105,7 +105,7 @@ public partial class MainPageViewModel:BaseViewModel
         {
             await Task.Run(async () =>
             {
-                var isClear= await _dbContext.ClearDataWhitJsonsTableAsync();
+                var isClear = await _dbContext.ClearDataWhitJsonsTableAsync();
 
                 var dataWhitJson = new DataWhitJson
                 {
@@ -123,6 +123,19 @@ public partial class MainPageViewModel:BaseViewModel
         // Aquí llamas a tu API y le envías apiValue y numericInput
     }
 
+
+    private async Task ShareItem()
+    {
+        await DisplayAlert("Toco el boton", "nmms", "se");
+        //if (item != null)
+        //{
+        //    await Share.Default.RequestAsync(new ShareTextRequest
+        //    {
+        //        Text = $"El dia : {item.fechaCorte} se realizaran cortes desde: {item.horaDesde} hasta {item.horaHasta}",
+        //        Title = "Share Item"
+        //    });
+        //}
+    }
 
     private void LlenarDatos(ApiResponse CnelData)
     {
@@ -146,6 +159,9 @@ public partial class MainPageViewModel:BaseViewModel
         IsVisible = true;
         Debug.WriteLine(CnelData.notificaciones.Count());
     }
+
+
+
 
     private string GetSelectedApiValue()
     {
