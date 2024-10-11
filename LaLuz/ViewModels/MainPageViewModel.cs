@@ -97,38 +97,43 @@ public partial class MainPageViewModel : BaseViewModel
 
     public async Task SubmitAsync()
     {
-        // Obtener el valor de la API basado en el displayName seleccionado
-        var apiValue = GetSelectedApiValue();
-
-        CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
-        LlenarDatos(CnelData);
-        ColorONOFF = "#a8d8ff";
-
-
-        if (IsSave)
+        try
         {
-            await Task.Run(async () =>
+            
+    
+            // Obtener el valor de la API basado en el displayName seleccionado
+            var apiValue = GetSelectedApiValue();
+
+            CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
+            LlenarDatos(CnelData);
+            ColorONOFF = "#a8d8ff";
+
+
+            if (IsSave)
             {
-                var isClear = await _dbContext.ClearDataWhitJsonsTableAsync();
-
-                var dataWhitJson = new DataWhitJson
+                await Task.Run(async () =>
                 {
-                    IdCNEL = idInput,
-                    TypeCNEL = apiValue,
-                    JsonData = CnelData.jsonData,
-                    SaveDate = DateTime.Now,
-                };
-                _dbContext.DataWhitJsons.Add(dataWhitJson);
-                await _dbContext.SaveChangesAsync();
+                    var isClear = await _dbContext.ClearDataWhitJsonsTableAsync();
 
-            });
+                    var dataWhitJson = new DataWhitJson
+                    {
+                        IdCNEL = idInput,
+                        TypeCNEL = apiValue,
+                        JsonData = CnelData.jsonData,
+                        SaveDate = DateTime.Now,
+                    };
+                    _dbContext.DataWhitJsons.Add(dataWhitJson);
+                    await _dbContext.SaveChangesAsync();
 
+                });
+
+            }
+            }
+        catch (System.Exception ex)
+        {
+            await DisplayAlert("Error",$"Experimentamos un Error: {ex.Message}","Ok");
         }
-        // Aquí llamas a tu API y le envías apiValue y numericInput
     }
-
-  
-
 
     private void LlenarDatos(ApiResponse CnelData)
     {
@@ -137,8 +142,6 @@ public partial class MainPageViewModel : BaseViewModel
         {
             var detallePlanificacions = CnelData.notificaciones[0].detalleplanificacion;
             DetallesPlanificaciones = new ObservableCollection<DetallePlanificacion>(detallePlanificacions);
-
-
         }
         else
         {
@@ -152,9 +155,6 @@ public partial class MainPageViewModel : BaseViewModel
         IsVisible = true;
         Debug.WriteLine(CnelData.notificaciones.Count());
     }
-
-
-
 
     private string GetSelectedApiValue()
     {
