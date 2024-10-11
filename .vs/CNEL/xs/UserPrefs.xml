@@ -1,42 +1,36 @@
 ﻿<Properties StartupConfiguration="{D6CEAB13-FFDF-453A-A301-9DA34D34A711}|Default">
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/Views/PrincipalPage.xaml.cs" relfile="LaLuz/Views/PrincipalPage.xaml.cs" line="20" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LaLuz PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="LaLuz/Resources/Styles/Colors.xaml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LaLuz/Views/PrincipalPage.xaml">
     <Files>
-      <File FileName="LaLuz/Resources/Styles/Colors.xaml" Line="9" Column="14" />
-      <File FileName="LaLuz/Views/PrincipalPage.xaml" Line="17" Column="152" />
-      <File FileName="LaLuz/App.xaml.cs" Line="8" Column="24" />
-      <File FileName="LaLuz/Views/PrincipalPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="LaLuz/MauiProgram.cs" Line="21" Column="1" />
-      <File FileName="LaLuz/Controls/CustomEntry.xaml" Line="4" Column="49" />
-      <File FileName="LaLuz/Controls/MyEntry.xaml" Line="16" Column="1" />
-      <File FileName="LaLuz/Controls/MyEntry.xaml.cs" Line="22" Column="1" />
-      <File FileName="LaLuz/Resources/Styles/Styles.xaml" Line="1" Column="1" />
+      <File FileName="LaLuz/ViewModels/MainPageViewModel.cs" />
+      <File FileName="LaLuz/Views/PrincipalPage.xaml" Line="13" Column="61" />
+      <File FileName="LaLuz/MauiProgram.cs" />
+      <File FileName="LaLuz/Views/PrincipalPage.xaml.cs" />
+      <File FileName="LaLuz/Resources/Styles/Colors.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CNEL" expanded="True">
             <Node name="LaLuz">
-              <Node name="Resources" expanded="True">
-                <Node name="Splash" expanded="True" />
-                <Node name="Styles" expanded="True">
-                  <Node name="Colors.xaml" selected="True" />
-                </Node>
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="PrincipalPage.xaml" selected="True" />
               </Node>
-              <Node name="Views" expanded="True" />
-              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
+  <MonoDevelop.Ide.ItemProperties.LaLuz PreferredExecutionTarget="Android.pixel_5_-_api_33" />
 </Properties>

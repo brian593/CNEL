@@ -33,7 +33,6 @@ public partial class PrincipalPage : ContentPage
             }
         }
     }
-
     //private void Clicked(object sender, EventArgs e)
     //{
     //    myCheckBox.IsChecked = !myCheckBox.IsChecked;

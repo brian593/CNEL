@@ -4,63 +4,96 @@
              x:Class="LaLuz.Views.PrincipalPage"
              xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
              xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+        
+
              BackgroundColor="Black">
     <StackLayout Padding="20">
         <!-- Campo numérico -->
 
+        <Label HorizontalOptions="CenterAndExpand" Text="Sin Luz" TextColor="{Binding ColorONOFF}" FontAttributes="Bold" FontSize="45">
+        </Label>
+        <Image>
+            <Image.Source>
+               <FontImageSource FontFamily="MaterialRegular" Glyph="{x:Static m:MaterialRegular.Lightbulb}" Color="{Binding ColorONOFF}" />
+            </Image.Source>
+        </Image>
 
-        <input:AdvancedEntry
-                        Title="Por favor ingrese el parametro para buscar:"
-                        IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Search}, Color={StaticResource Primary}}"
-                        Keyboard="Numeric"
-                        PlaceholderColor="LightGray"
-                        Placeholder="5439998877"
-                        Text="{Binding IdInput}"
-                       
-                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}">
+<Grid RowDefinitions="Auto" ColumnDefinitions="*,*" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="25" ColumnSpacing="5">
+    <!-- AdvancedEntry con ajustes -->
+    <input:AdvancedEntry
+        Title="Por favor ingrese el parametro para buscar:"
+        IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Search}, Color=#5cb2ff}"
+        Keyboard="Numeric"
+        BorderColor="#5cb2ff"
+        HeightRequest="48"
+        Placeholder="5439998877"
+        Text="{Binding IdInput}"
+        TextColor="{AppThemeBinding {StaticResource White}}"
+        BackgroundColor="Black"
+        CornerRadius="0"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Grid.Row="0"
+        Grid.Column="0"
+        Margin="0,0,0,35"/>
 
-        </input:AdvancedEntry>
-
-        <!-- Picker para los criterios -->
-        <Frame BackgroundColor="Transparent"
-       BorderColor="#5cb2ff"
-       CornerRadius="10"
-       Padding="0"
-       Margin="10"
-       HasShadow="False">
-            <Picker
+          
+    <!-- Picker con ajustes en Frame -->
+            <Frame
+        BackgroundColor="Transparent"
+        BorderColor="#5cb2ff"
+        CornerRadius="0"
+        HeightRequest="47"
+        HasShadow="False"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Padding="0"
+        Grid.Row="0"
+        Grid.Column="1">
+                
+        <Picker
             Title="Criterio de busqueda"
             TextColor="White"
+            
+            HeightRequest="47"
             BackgroundColor="Transparent"
-            TitleColor="#a8d8ff"
+            TitleColor="#5cb2ff"
             ItemsSource="{Binding DisplayTypes}"
             SelectedItem="{Binding SelectedType}"
             HorizontalOptions="FillAndExpand"
-            VerticalOptions="CenterAndExpand"
-            Margin="0"/>
-        </Frame>
+            VerticalOptions="CenterAndExpand" />
+    </Frame>
 
+</Grid>
+
+
+      
         <!-- Botón para enviar -->
         <Button
             Text="Consultar"
             TextColor="White"
+            Margin="20,0,20,0"
             BackgroundColor="#5cb2ff"
             Command="{Binding SubmitAsyncCommand}" />
 
         <!-- CheckBox y etiqueta -->
-        <input:CheckBox Text="Guardar la última consulta" Type="Material" IsChecked="{Binding IsSave}" TextColor="AliceBlue" Color="#5cb2ff" />
-        <!--<StackLayout Orientation="Horizontal">
-            <CheckBox x:Name="myCheckBox"
-                  IsChecked="{Binding IsSave,Mode=TwoWay}"
-                  Color="#5cb2ff" />
-            <Label VerticalTextAlignment="Center" Text="Guardar la última consulta" TextColor="White">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Clicked"/>
-                </Label.GestureRecognizers>
-            </Label>
-        </StackLayout>-->
+        <input:CheckBox
+            Text="Guardar la última consulta"
+            Type="Material"
+            IsChecked="{Binding IsSave}"
+            TextColor="AliceBlue"
+             Margin="20,10,20,10"
+            Color="#5cb2ff" />
+       
 
         <!-- Resultado de la consulta -->
+        <Label Text="Datos de Cliente"
+               HorizontalOptions="Center"
+               IsVisible="{Binding IsVisible}"
+               FontAttributes="Bold"
+               TextColor="White"
+               />
+        
         <Label IsVisible="{Binding IsVisible}" Text="Cuenta Contrato: " FontAttributes="Bold" TextColor="White" />
         <Label IsVisible="{Binding IsVisible}" Text="{Binding CuentaContrato}" TextColor="#a8d8ff" />
 
@@ -71,7 +104,12 @@
         <Label IsVisible="{Binding IsVisible}" Text="{Binding FechaRegistro}" TextColor="#a8d8ff" />
 
         <!-- ListView -->
-
+         <Label Text="Horarios de corte"
+               HorizontalOptions="Center"
+               IsVisible="{Binding IsVisible}"
+               FontAttributes="Bold"
+               TextColor="White"
+               />
         <ListView ItemsSource="{Binding DetallesPlanificaciones}"
           HasUnevenRows="True"
           SeparatorVisibility="None"
@@ -116,7 +154,7 @@
                                         Clicked="ImageButton_Clicked"
                                         >
                                         <ImageButton.Source>
-                                            <FontImageSource FontFamily="MaterialRegular" Glyph="{x:Static m:MaterialRegular.Share}" Color="Orange" />
+                                            <FontImageSource FontFamily="MaterialRegular" Glyph="{x:Static m:MaterialRegular.Share}" Color="#a8d8ff" />
                                         </ImageButton.Source>
                                     </ImageButton>
 

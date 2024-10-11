@@ -21,10 +21,10 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>LaLuz</ApplicationTitle>
+		<ApplicationTitle>Sin Luz</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.laluz</ApplicationId>
+		<ApplicationId>com.shushu.laluz</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -75,12 +75,10 @@
 	<ItemGroup>
 	  <None Remove="Utils\" />
 	  <None Remove="DataAccess\" />
-	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Utils\" />
 	  <Folder Include="DataAccess\" />
-	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png" Condition="Exists('$(NuGetPackageRoot)inputkit.maui/4.4.7/contentFiles/any/net8.0-android34.0/icon512.png')">

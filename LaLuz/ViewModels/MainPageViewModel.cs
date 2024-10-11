@@ -1,6 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Windows.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using LaLuz.DataAccess;
@@ -53,8 +54,11 @@ public partial class MainPageViewModel : BaseViewModel
     private string direccion;
     [ObservableProperty]
     private string fechaRegistro;
-    public System.Windows.Input.ICommand SubmitAsyncCommand { get; }
-    public System.Windows.Input.ICommand ShareItemCommand { get; }
+    [ObservableProperty]
+    private string colorONOFF;
+
+
+    public ICommand SubmitAsyncCommand { get; }
 
     #endregion
 
@@ -68,10 +72,9 @@ public partial class MainPageViewModel : BaseViewModel
         selectedType = Types["CUENTA_CONTRATO"]; // Valor por defecto
 
         SubmitAsyncCommand = new AsyncRelayCommand(SubmitAsync);
-        ShareItemCommand = new AsyncRelayCommand(ShareItem);
-
         MainThread.BeginInvokeOnMainThread(new Action(async () => await Obtener()));
 
+        ColorONOFF = "#666666";
         // Task.Run(async () => await LoadDataFromDatabaseAsync());
 
     }
@@ -99,6 +102,7 @@ public partial class MainPageViewModel : BaseViewModel
 
         CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
         LlenarDatos(CnelData);
+        ColorONOFF = "#a8d8ff";
 
 
         if (IsSave)
@@ -123,19 +127,8 @@ public partial class MainPageViewModel : BaseViewModel
         // Aquí llamas a tu API y le envías apiValue y numericInput
     }
 
+  
 
-    private async Task ShareItem()
-    {
-        await DisplayAlert("Toco el boton", "nmms", "se");
-        //if (item != null)
-        //{
-        //    await Share.Default.RequestAsync(new ShareTextRequest
-        //    {
-        //        Text = $"El dia : {item.fechaCorte} se realizaran cortes desde: {item.horaDesde} hasta {item.horaHasta}",
-        //        Title = "Share Item"
-        //    });
-        //}
-    }
 
     private void LlenarDatos(ApiResponse CnelData)
     {
