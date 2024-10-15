@@ -7,6 +7,7 @@ using CommunityToolkit.Mvvm.Input;
 using LaLuz.DataAccess;
 using LaLuz.Models;
 using LaLuz.Services;
+using LaLuz.Utils;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
@@ -103,11 +104,16 @@ public partial class MainPageViewModel : BaseViewModel
     
             // Obtener el valor de la API basado en el displayName seleccionado
             var apiValue = GetSelectedApiValue();
-
+            var valido=true;
+            if(apiValue== "IDENTIFICACION")
+            {
+            valido=VerifyID.VerificaIdentificacion(IdInput);
+            }
+            if(valido)  
+            {
             CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
             LlenarDatos(CnelData);
             ColorONOFF = "#a8d8ff";
-
 
             if (IsSave)
             {
@@ -126,9 +132,13 @@ public partial class MainPageViewModel : BaseViewModel
                     await _dbContext.SaveChangesAsync();
 
                 });
-
             }
             }
+            else
+            {
+               await DisplayAlert("Error","La identificacion no es validad","Cancelar");
+            }
+        }
         catch (System.Exception ex)
         {
             await DisplayAlert("Error",$"Experimentamos un Error: {ex.Message}","Ok");
