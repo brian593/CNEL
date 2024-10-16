@@ -7,15 +7,12 @@ public partial class BaseViewModel : ObservableObject
 {
         public INavigation Navigation { get; set; }
 
-        // Propiedad automática con notificación de cambios
         [ObservableProperty]
         private ImageSource foto;
 
-        // Propiedad automática con notificación de cambios para el título
         [ObservableProperty]
         private string title;
 
-        // Propiedad automática con notificación de cambios para el estado de carga
         [ObservableProperty]
         private bool isBusy;
 
@@ -24,7 +21,6 @@ public partial class BaseViewModel : ObservableObject
 
 
 
-    // Métodos para mostrar alertas
     public async Task DisplayAlert(string title, string message, string cancel)
         {
             await Application.Current.MainPage.DisplayAlert(title, message, cancel);
