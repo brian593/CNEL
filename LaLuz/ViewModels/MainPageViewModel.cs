@@ -19,10 +19,6 @@ public partial class MainPageViewModel : BaseViewModel
     private readonly IApiServices _apiServices;
     private readonly DWJDBContext _dbContext;
 
-
-    // Diccionario para mapear Criterio a sus valores y nombres
-
-    // Diccionario para mapear los valores API a nombres de visualización
     private Dictionary<string, string> Types { get; } = new Dictionary<string, string>
     {
         { "CUENTA_CONTRATO", "Cuenta contrato" },
@@ -76,7 +72,6 @@ public partial class MainPageViewModel : BaseViewModel
         MainThread.BeginInvokeOnMainThread(new Action(async () => await Obtener()));
 
         ColorONOFF = "#666666";
-        // Task.Run(async () => await LoadDataFromDatabaseAsync());
 
     }
     #endregion
@@ -100,9 +95,6 @@ public partial class MainPageViewModel : BaseViewModel
     {
         try
         {
-            
-    
-            // Obtener el valor de la API basado en el displayName seleccionado
             var apiValue = GetSelectedApiValue();
             var valido=true;
             if(apiValue== "IDENTIFICACION")
@@ -147,7 +139,6 @@ public partial class MainPageViewModel : BaseViewModel
 
     private void LlenarDatos(ApiResponse CnelData)
     {
-        // Asegúrate de que la propiedad 'notificaciones' y 'detallesPlanificaciones' no sean nulas.
         if (CnelData?.notificaciones != null && CnelData.notificaciones.Count > 0 && CnelData.notificaciones[0].detalleplanificacion != null)
         {
             var detallePlanificacions = CnelData.notificaciones[0].detalleplanificacion;
@@ -155,7 +146,6 @@ public partial class MainPageViewModel : BaseViewModel
         }
         else
         {
-            // Si la lista es nula, crea una ObservableCollection vacía
             DetallesPlanificaciones = new ObservableCollection<DetallePlanificacion>();
         }
         CuentaContrato = CnelData.notificaciones[0].cuentaContrato;
@@ -168,7 +158,6 @@ public partial class MainPageViewModel : BaseViewModel
 
     private string GetSelectedApiValue()
     {
-        // Buscar el valor del API basado en el nombre seleccionado
         foreach (var type in Types)
         {
             if (type.Value == SelectedType)
@@ -176,6 +165,6 @@ public partial class MainPageViewModel : BaseViewModel
                 return type.Key;
             }
         }
-        return "CUENTA_CONTRATO"; // Valor por defecto si no se encuentra
+        return "CUENTA_CONTRATO"; 
     }
 }

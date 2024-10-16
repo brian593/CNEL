@@ -8,7 +8,6 @@
 
              BackgroundColor="Black">
     <StackLayout Padding="20">
-        <!-- Campo numérico -->
 
         <Label HorizontalOptions="CenterAndExpand" Text="Sin Luz" TextColor="{Binding ColorONOFF}" FontAttributes="Bold" FontSize="45">
         </Label>
@@ -19,7 +18,6 @@
         </Image>
 
 <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="25" ColumnSpacing="5">
-    <!-- AdvancedEntry con ajustes -->
     <input:AdvancedEntry
         Title="Por favor ingrese el parametro para buscar:"
         IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Search}, Color=#5cb2ff}"
@@ -118,25 +116,19 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <!-- Usando Grid y BoxView para simular una tarjeta -->
                         <Grid Padding="10" Margin="0,5" BackgroundColor="#1e1e1e">
-                            <!-- BoxView para el borde de la tarjeta -->
                             <BoxView Color="#1f1f1f" CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
 
-                            <!-- Contenido de la tarjeta -->
                             <Grid Padding="10" Margin="1" RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,Auto">
 
-                                <!-- Fecha -->
                                 <Grid Grid.Row="0" Grid.Column="0">
                                     <Label Text="{Binding fechaCorte}" TextColor="#a8d8ff"/>
                                 </Grid>
 
-                                <!-- Comentario -->
                                 <Grid Grid.Row="1" Grid.Column="0">
                                     <Label Text="{Binding comentario}" TextColor="#a8d8ff"/>
                                 </Grid>
 
-                                <!-- Desde/Hasta -->
                                 <Grid Grid.Row="2" Grid.Column="0" RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
 
                                     <!-- Desde -->
