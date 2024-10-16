@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sin Luz - Información sobre cortes de luz programados en tu zona">
+    <meta name="keywords" content="cortes de luz, apagones, alertas, energía, Sin Luz">
+    <meta name="author" content="Tu Nombre o Equipo">
+    <title>Sin Luz - Información de Cortes de Luz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #0d0d0d;
+            color: #5cb2ff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        .main-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #262626;
+        }
+
+        .main-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #5cb2ff;
+        }
+
+        .main-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #d9d9d9;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background-color: #333333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            width: 30%;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            margin-bottom: 15px;
+            color: #5cb2ff;
+        }
+
+        .feature p {
+            color: #d9d9d9;
+        }
+
+        .cta {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta h2 {
+            margin: 0 0 20px;
+            color: #5cb2ff;
+        }
+
+        .cta a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #5cb2ff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #47a1e8;
+        }
+
+        footer {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #5cb2ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .feature {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .main-section h2 {
+                font-size: 2em;
+            }
+        }
+        .collaborate-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #d9d9d9;
+}
+
+.collaborate-section h2, .collaborate-section h3 {
+    color: #5cb2ff;
+}
+
+.collaborate-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.collaborate-section li {
+    margin-bottom: 15px;
+}
+
+.collaborate-section a {
+    color: #5cb2ff;
+    text-decoration: none;
+}
+
+.collaborate-section a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/icon-512.png" width="20%" height="20%" />
+        <h1>Sin Luz</h1>
+        <p>La app para estar informado sobre cortes de luz en tu zona</p>
+    </header>
+
+    <section class="main-section">
+        <h2>¿Qué es Sin Luz?</h2>
+        <p>Sin Luz es una aplicación móvil diseñada para mantenerte informado sobre los cortes de luz programados en tu área. Al ingresar tu número de cédula, cta de contrato o código único, obtendrás información detallada sobre los apagones de la semana. Prepárate y evita sorpresas.</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Consulta Rápida por Cédula</h3>
+            <p>Solo necesitas tu número de cédula para acceder a la información precisa sobre los cortes de luz en tu zona.</p>
+        </div>
+        <div class="feature">
+            <h3>Comparte el horario</h3>
+            <p>Comparte el item de la programacion de nuevos cortes de energía y mantente siempre informado.</p>
+        </div>
+        <div class="feature">
+            <h3>Acceso sin Conexión</h3>
+            <p>Consulta los datos de cortes de luz previamente cargados sin necesidad de conexión a internet.</p>
+        </div>
+    </section>
+
+    <section class="collaborate-section">
+        <h2>¿Cómo colaborar al proyecto?</h2>
+        <p>Sin Luz es un proyecto de código abierto, lo que significa que cualquier persona puede contribuir a su desarrollo y mejora. Ya seas un desarrollador, diseñador o simplemente alguien interesado en ayudar, ¡tus contribuciones son bienvenidas!</p>
+        
+        <h3>Pasos para colaborar</h3>
+        <ul>
+            <li><strong>1. Explora el código fuente:</strong> Puedes acceder al código fuente de Sin Luz en nuestro <a href="https://github.com/tu-usuario/sin-luz" target="_blank" style="color: #5cb2ff;">repositorio en GitHub</a>.</li>
+            <li><strong>2. Crea un fork del repositorio:</strong> Si deseas realizar cambios, haz un fork del proyecto en tu cuenta de GitHub para trabajar en una copia.</li>
+            <li><strong>3. Realiza mejoras o correcciones:</strong> Puedes agregar nuevas características, corregir errores, mejorar la documentación o cualquier otra cosa que creas útil.</li>
+            <li><strong>4. Envía un pull request (PR):</strong> Cuando termines de realizar tus cambios, envía un PR para que podamos revisarlo y fusionarlo con el proyecto principal.</li>
+        </ul>
+    
+        <h3>¿No eres desarrollador?</h3>
+        <p>¡No hay problema! También puedes colaborar reportando problemas, sugeriendo nuevas funcionalidades o simplemente compartiendo la aplicación con otros para que más personas la conozcan.</p>
+    
+        <h3>Licencia</h3>
+        <p>Este proyecto está bajo la <a href="https://github.com/tu-usuario/sin-luz/blob/main/LICENSE" target="_blank" style="color: #5cb2ff;">Licencia MIT</a>, lo que significa que puedes utilizar, modificar y distribuir el código libremente, siempre y cuando mantengas las condiciones de la licencia.</p>
+    </section>
+
+    <section class="cta">
+        <h2>Descarga la App Ahora</h2>
+
+        <a href="#" style="display: inline-flex; align-items: center; text-decoration: none;">
+            <span style="color: #ffffff; font-size: 1.1em;">Disponible en Google Play </span>
+            <img src="img/google-play.png" alt="Disponible en Google Play " style="width: 30px; margin-right: 10px;">
+        </a>
+      
+
+        </section>
+        <section class="support-section" style="text-align: center; padding: 60px 20px; background-color: #1c1c1c;">
+            <h2 style="color: #5cb2ff;">Apóyanos comprando un café</h2>
+            <p style="color: #d9d9d9; font-size: 1.2em; margin-bottom: 30px;">
+                Si te gusta la app y quieres ayudarnos a seguir mejorándola, ¡invítanos un café!
+            </p>
+            <a 
+                href="https://www.buymeacoffee.com/5W76wPR" 
+                target="_blank" 
+                style="text-decoration: none;">
+                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+                alt="Invítame un café" 
+                style="height: 60px !important; width: 217px !important;">
+            </a>
+        </section>
+        
+    <footer>
+        <p>&copy; 2024 Sin Luz. Todos los derechos reservados.</p>
+        <p><a href="#">Política de Privacidad</a></p>
+    </footer>
+
+</body>
+</html>
