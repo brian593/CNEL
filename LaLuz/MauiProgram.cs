@@ -5,7 +5,9 @@ using LaLuz.Services;
 using LaLuz.ViewModels;
 using LaLuz.Views;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 using UraniumUI;
+using AutoMapper;
 
 namespace LaLuz;
 
@@ -14,6 +16,17 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
+        #region automapperConfig
+ // Configurar AutoMapper
+        var mapperConfig = new MapperConfiguration(cfg =>
+        {
+            cfg.AddProfile(new MappingProfileCNEL());
+        });
+
+        IMapper mapper = mapperConfig.CreateMapper();
+        builder.Services.AddSingleton(mapper); 	
+#endregion
+
 		builder
 			.UseMauiApp<App>()
             .ConfigureMauiHandlers(handlers =>

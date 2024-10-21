@@ -17,23 +17,22 @@
             </Image.Source>
         </Image>
 
-<Grid RowDefinitions="Auto" ColumnDefinitions="*,*" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="25" ColumnSpacing="5">
-    <input:AdvancedEntry
+<StackLayout Orientation="Vertical">
+  <input:AdvancedEntry
         Title="Por favor ingrese el parametro para buscar:"
         IconImage="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Search}, Color=#5cb2ff}"
         Keyboard="Numeric"
         BorderColor="#5cb2ff"
-        HeightRequest="48"
         Placeholder="5439998877"
         Text="{Binding IdInput}"
         TextColor="{AppThemeBinding {StaticResource White}}"
         BackgroundColor="Black"
+        
         CornerRadius="0"
         HorizontalOptions="FillAndExpand"
         VerticalOptions="CenterAndExpand"
-        Grid.Row="0"
-        Grid.Column="0"
-        Margin="0,0,0,35"/>
+          Margin="20,10,20,5"
+/>
 
           
     <!-- Picker con ajustes en Frame -->
@@ -41,30 +40,30 @@
         BackgroundColor="Transparent"
         BorderColor="#5cb2ff"
         CornerRadius="0"
-        HeightRequest="47"
+        HeightRequest="48"
         HasShadow="False"
         HorizontalOptions="FillAndExpand"
-        VerticalOptions="CenterAndExpand"
         Padding="0"
-        Grid.Row="0"
-        Grid.Column="1">
+        Margin="20,5,20,10"
+       >
                 
         <Picker
             Title="Criterio de busqueda"
             TextColor="White"
-            
-            HeightRequest="47"
+            HeightRequest="48"
             BackgroundColor="Transparent"
             TitleColor="#5cb2ff"
             ItemsSource="{Binding DisplayTypes}"
             SelectedItem="{Binding SelectedType}"
             HorizontalOptions="FillAndExpand"
-            VerticalOptions="CenterAndExpand" />
+            />
     </Frame>
 
-</Grid>
-
-
+    <StackLayout Orientation="Horizontal">
+        <Label Text="CNEL"/>    
+        <Switch IsToggled="{Binding IsCentroSur}" ThumbColor="#5cb2ff" OnColor="#ffffff"/>
+        <Label Text="Centro Sur"/>    
+    </StackLayout>
       
         <!-- Botón para enviar -->
         <Button
@@ -83,6 +82,8 @@
              Margin="20,10,20,10"
             Color="#5cb2ff" />
        
+</StackLayout>
+  
 
         <!-- Resultado de la consulta -->
         <Label Text="Datos de Cliente"
@@ -110,6 +111,7 @@
                />
         <ListView ItemsSource="{Binding DetallesPlanificaciones}"
           HasUnevenRows="True"
+          BackgroundColor="black"
           SeparatorVisibility="None"
           Margin="10">
 

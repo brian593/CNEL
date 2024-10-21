@@ -1,16 +1,19 @@
 ﻿<Properties StartupConfiguration="{D6CEAB13-FFDF-453A-A301-9DA34D34A711}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/brianmolinabastidas/CNEL/LaLuz/Views/PrincipalPage.xaml.cs" relfile="LaLuz/Views/PrincipalPage.xaml.cs" line="20" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LaLuz PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
   <MonoDevelop.Ide.Workbench ActiveDocument="LaLuz/Views/PrincipalPage.xaml">
     <Files>
       <File FileName="LaLuz/ViewModels/MainPageViewModel.cs" />
-      <File FileName="LaLuz/Views/PrincipalPage.xaml" Line="13" Column="61" />
+      <File FileName="LaLuz/Views/PrincipalPage.xaml" Line="13" Column="17" />
       <File FileName="LaLuz/MauiProgram.cs" />
       <File FileName="LaLuz/Views/PrincipalPage.xaml.cs" />
       <File FileName="LaLuz/Resources/Styles/Colors.xaml" />
@@ -20,17 +23,13 @@
         <State name="__root__">
           <Node name="CNEL" expanded="True">
             <Node name="LaLuz">
+              <Node name="Platforms" expanded="True" />
               <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="PrincipalPage.xaml" selected="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
-  <MonoDevelop.Ide.ItemProperties.LaLuz PreferredExecutionTarget="Android.pixel_5_-_api_33" />
 </Properties>

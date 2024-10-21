@@ -37,6 +37,9 @@ public partial class MainPageViewModel : BaseViewModel
     private bool isSave;
 
     [ObservableProperty]
+    private bool isCentroSur;
+
+    [ObservableProperty]
     private string idInput;
 
     [ObservableProperty]
@@ -103,7 +106,32 @@ public partial class MainPageViewModel : BaseViewModel
             }
             if(valido)  
             {
-            CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
+                if (!IsCentroSur)
+                {            
+                    CnelData = await _apiServices.GetDataCnel(IdInput, apiValue);
+                }
+                else
+                {
+                    if (apiValue=="CUENTA_CONTRATO")
+                    {
+                        apiValue="CCO";
+                    }
+                    else if (apiValue=="IDENTIFICACION")
+                    {
+                        apiValue="CED";
+                    }
+                    else if(apiValue=="CUEN")
+                    {
+                        apiValue="CUE";
+                    }
+                    
+                    var DataModel=new CentroSurModel{
+                        iTipoConsulta=apiValue,
+                        iValorConsulta=idInput
+                    };
+                    CnelData = await _apiServices.GetDataCentroSur(DataModel);
+                }
+
             LlenarDatos(CnelData);
             ColorONOFF = "#a8d8ff";
 
